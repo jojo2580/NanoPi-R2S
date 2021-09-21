@@ -1,23 +1,16 @@
 name: NanoPi-R2S RK3328 OpenWrt 19.07 Build
-
 on:
   push:
     paths:
       - 'CHANGELOG.md'
-
 jobs:
-
   build:
-
     runs-on: self-hosted
-
     steps:
-
       - name: Checkout
         uses: actions/checkout@master
         with:
           ref: master
-
       - name: Initialize Environment
         env:
           DEBIAN_FRONTEND: noninteractive
